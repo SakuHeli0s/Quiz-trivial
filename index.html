@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trivial</title>
+    <title>Trivial Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,6 +19,7 @@
 
     <section id="question-screen">
         <div class="question-container">
+            <span id="number-questions" class="number-questions">1 de 10</span>
             <h2 class="question-title">1. ¿Cuáles son los cinco tipos de sabores primarios?</h2>
             <div class="questions">
                 <button class="btn-question" data-respuesta="A">A. Dulce, amargo, ácido, salado y umami</button>
@@ -26,10 +27,22 @@
                 <button class="btn-question" data-respuesta="C">C. Salado, dulce, agrio y umami</button>
                 <button class="btn-question" data-respuesta="D">D. Dulce, salado, ácido y amargo</button>
             </div>
+
+            <p id="status-answer">¡Respuesta correcta!</p>
+            
+            <button id="btn-next" class="btn-next">Siguiente pregunta</button>
         </div>
     </section>
 
-    <section id="result-screen"></section>
+    <section id="result-screen">
+        <div class="result-screen-container">
+            <h1>Resultados</h1>
+
+            <div id="total-result"></div>
+
+            <button id="btn-play-again" class="btn-play-again">Jugar otra vez</button>
+        </div>
+    </section>
     
     <!--JAVASCRIPT-->
     <script src="main.js"></script>
