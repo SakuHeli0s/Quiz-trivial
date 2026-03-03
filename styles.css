@@ -7,8 +7,10 @@
 :root{
     --primary-color: #17C3B2; /*Para acentos y botones*/
     --color-background: #0F3460; /*Fondo principal*/
-    --color-question: #1a58a5; /*Color fondo pregunta*/
-    --color-btn-question: #1a3a6b;
+    --color-question: #1454a3; /*Color fondo pregunta*/
+    --color-btn-question: #1a3a6b; /*Color fondo preguntas*/
+    --color-btn-hover-primary: #0d7066; /*Hover pantalla bienvenida*/
+    --color-btn-hover-secondary: #416aa8; /*Hover pantalla preguntas*/
     --wrong-color: #F44336; /*Pregunta fallida*/
     --correct-color: #4CAF50; /*Pregunta acertada*/
     --text-color: #F0F0F0; /*Color textos*/
@@ -74,7 +76,7 @@ body{
 }
 
 .btn-quiz:hover{
-    background-color: #0d7066;
+    background-color: var(--color-btn-hover-primary);
 }
 
 
@@ -110,14 +112,36 @@ body{
     color: var(--text-color);
     padding: 0.8rem 1rem;
     border-radius: 10px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .btn-question:hover{
-    background-color: #416aa8;
+    background-color: var(--color-btn-hover-secondary);
+}
+
+#status-answer{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.btn-next{
+    padding: 1.8rem;
+    background: var(--primary-color);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-next:hover{
+    background-color: var(--color-btn-hover-primary);
 }
 
 /*RESULT SCREEN*/
