@@ -1,0 +1,17 @@
+/*FONT*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/*COLORES*/
+
+:root{
+    --primary-color: #17C3B2; /*Para acentos y botones*/
+    --color-background: #0F3460; /*Fondo principal*/
+    --wrong-color: #F44336; /*Pregunta fallida*/
+    --correct-color: #4CAF50; /*Pregunta acertada*/
+    --text-color: #F0F0F0; /*Color textos*/
+    --font-main: 'Poppins', sans-serif; /*Font principal*/
+
+    /*Mas colores*/
+}
+
