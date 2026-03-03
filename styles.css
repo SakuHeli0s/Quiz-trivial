@@ -79,7 +79,19 @@ body{
 /*QUESTION SCREEN*/
 
 #question-screen{
-    display: none;
+    /*display: none; Activar despues*/
+    background-color: var(--color-background);
+}
+
+.question-container{
+    border-radius: 20px;
+    padding: 2.5rem;
+}
+
+.btn-question{
+    width: 100%;
+    border: 3px solid var(--primary-color);
+    background: transparent;
 }
 
 /*RESULT SCREEN*/
