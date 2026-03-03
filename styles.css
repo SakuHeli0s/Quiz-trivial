@@ -7,6 +7,8 @@
 :root{
     --primary-color: #17C3B2; /*Para acentos y botones*/
     --color-background: #0F3460; /*Fondo principal*/
+    --color-question: #1a58a5; /*Color fondo pregunta*/
+    --color-btn-question: #1a3a6b;
     --wrong-color: #F44336; /*Pregunta fallida*/
     --correct-color: #4CAF50; /*Pregunta acertada*/
     --text-color: #F0F0F0; /*Color textos*/
@@ -80,18 +82,42 @@ body{
 
 #question-screen{
     /*display: none; Activar despues*/
-    background-color: var(--color-background);
 }
 
 .question-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 20px;
     padding: 2.5rem;
+    background: var(--color-question);
+    gap: 1.5rem;
+}
+
+.number-questions{
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.question-title{
+    color: var(--text-color);
 }
 
 .btn-question{
     width: 100%;
     border: 3px solid var(--primary-color);
-    background: transparent;
+    background: var(--color-btn-question);
+    color: var(--text-color);
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-question:hover{
+    background-color: #416aa8;
 }
 
 /*RESULT SCREEN*/
