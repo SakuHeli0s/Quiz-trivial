@@ -90,10 +90,19 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-radius: 20px;
     padding: 2.5rem;
     background: var(--color-question);
     gap: 1.5rem;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0.8rem;
 }
 
 .number-questions{
@@ -103,6 +112,7 @@ body{
 
 .question-title{
     color: var(--text-color);
+    font-size: 1.6rem;
 }
 
 .btn-question{
@@ -143,6 +153,7 @@ body{
 .btn-next:hover{
     background-color: var(--color-btn-hover-primary);
 }
+
 
 /*RESULT SCREEN*/
 
