@@ -15,8 +15,26 @@ const btnPlayAgain = document.getElementById("btn-play-again")
 
 //ARRAY PREGUNTAS
 
-const questions = {
-    pregunta: "¿Cuál es la capital de Francia?",
-    opciones: ["Madrid", "París", "Roma", "Berlín"],
-    correcta: "París"
-}
+const questions = [
+    {
+        pregunta: "¿Cuál es la capital de Francia?",
+        opciones: ["Madrid", "París", "Roma", "Berlín"],
+        correcta: "París"
+    },
+    {
+        pregunta: "¿Quién escribió 'La Odisea'?",
+        opciones: ["Eúripides", "Sófocles", "Homero", "Aristóteles"],
+        correcta: "Homero"
+    },
+    {
+        pregunta: "¿Cuál es el río más largo del mundo?",
+        opciones: ["Nilo", "Misisipi", "Amazonas", "Yangtsé"],
+        correcta: "Amazonas"
+    },
+    {
+        pregunta: "¿Cuáles son los colores que constituyen la bandera de México?",
+        opciones: ["Blanco, azul y rojo", "Verde, blanco y rojo", "Rojo, amarillo y verde", "Blanco, rojo y naranja"],
+        correcta: "Verde, blanco y rojo"
+    },
+]
+
