@@ -80,10 +80,11 @@ body{
 }
 
 
+
 /*QUESTION SCREEN*/
 
 #question-screen{
-    /*display: none; Activar despues*/
+    display: none;
 }
 
 .question-container{
@@ -152,6 +153,16 @@ body{
 
 .btn-next:hover{
     background-color: var(--color-btn-hover-primary);
+}
+
+/*RESPUESTA CORRECTA E INCORRECTA*/
+
+.correct{
+    color: var(--correct-color);
+}
+
+.incorrect{
+    color: var(--wrong-color);
 }
 
 
