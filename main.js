@@ -37,7 +37,7 @@ const questions = [
         correcta: "Verde, blanco y rojo"
     },
     {
-        pregunta: "¿Cuándo acabo la Segunda Guerra Mundial?",
+        pregunta: "¿Cuándo acabó la Segunda Guerra Mundial?",
         opciones: ["1954", "1945", "1949", "1952"],
         correcta: "1945"
     },
@@ -55,6 +55,16 @@ const questions = [
         pregunta: "¿Qué significan las siglas 'FIFA'?",
         opciones: ["Federation International France Association", "France International Family Antropic", "Fédération Internationale de Football Association", "Federation Imposible Football Association"],
         correcta: "Fédération Internationale de Football Association"
+    },
+    {
+        pregunta: "¿Cuál es la moneda del Reino Unido?",
+        opciones: ["Euro", "Libra", "Penique", "Peseta"],
+        correcta: "Libra"
+    },
+    {
+        pregunta: "¿Cuál es el color que representa la esperanza?",
+        opciones: ["Azul", "Blanco", "Verde", "Rosa"],
+        correcta: "Verde"
     }
 ]
 
