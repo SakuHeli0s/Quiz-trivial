@@ -36,5 +36,25 @@ const questions = [
         opciones: ["Blanco, azul y rojo", "Verde, blanco y rojo", "Rojo, amarillo y verde", "Blanco, rojo y naranja"],
         correcta: "Verde, blanco y rojo"
     },
+    {
+        pregunta: "¿Cuándo acabo la Segunda Guerra Mundial?",
+        opciones: ["1954", "1945", "1949", "1952"],
+        correcta: "1945"
+    },
+    {
+        pregunta: "¿Dónde se encuentra 'La Sagrada Familia?'",
+        opciones: ["Valencia", "País Vasco", "Andalucía", "Barcelona"],
+        correcta: "Barcelona"
+    },
+    {
+        pregunta: "¿Cuál es el producto que se cultiva más en Guatemala?",
+        opciones: ["Café", "Arroz", "Cereal", "Cacao"],
+        correcta: "Café"
+    },
+    {
+        pregunta: "¿Qué significan las siglas 'FIFA'?",
+        opciones: ["Federation International France Association", "France International Family Antropic", "Fédération Internationale de Football Association", "Federation Imposible Football Association"],
+        correcta: "Fédération Internationale de Football Association"
+    }
 ]
 
