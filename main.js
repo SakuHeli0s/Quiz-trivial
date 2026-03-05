@@ -75,20 +75,48 @@ const questions = [
 let numeroPregunta = 0
 let aciertosPregunta = 0
 let respuestaUsuario = false
+let preguntaActual
 
 
 //FUNCION PREGUNTAS
 
 function mostrarPregunta (){
-    const preguntaActual = questions[numeroPregunta]
+    preguntaActual = questions[numeroPregunta]
     questionTitle.textContent = preguntaActual.pregunta
 
     const botonesRespuesta = document.querySelectorAll(".btn-question")
     botonesRespuesta.forEach((boton, indice) => {
         boton.textContent = preguntaActual.opciones[indice]
+
+        boton.addEventListener("click", comprobarRespuesta)
     })
 
-    numberQuestions.textContent = (numeroPregunta + 1) + " de" + questions.length
+    numberQuestions.textContent = (numeroPregunta + 1) + " de " + questions.length
 }
 
 //FUNCION ESCONDER PANTALLA BIENVENIDA
+
+function iniciarQuiz (){
+    welcomeContainer.style.display = "none"
+    questionScreen.style.display = "block"
+    mostrarPregunta()
+}
+
+btnQuiz.addEventListener("click", iniciarQuiz)
+
+
+//FUNCION RESPUESTA CORRECTA O INCORRECTA
+
+function comprobarRespuesta(e){
+    const seleccionUsuario = e.target.dataset.respuesta
+
+    if(seleccionUsuario === preguntaActual.correcta){
+        aciertosPregunta++
+        statusAnswer.textContent = "¡Correcto!"
+        statusAnswer.classList.add("correct")
+    }else{
+        aciertosPregunta--
+        statusAnswer.textContent = "¡Incorrecto!"
+        statusAnswer.classList.add("incorrect")
+    }
+}

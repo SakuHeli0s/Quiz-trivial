@@ -113,7 +113,7 @@ body{
 
 .question-title{
     color: var(--text-color);
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 }
 
 .btn-question{
@@ -134,7 +134,7 @@ body{
 }
 
 #status-answer{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: var(--text-color);
 }
@@ -143,8 +143,9 @@ body{
     padding: 1.8rem;
     background: var(--primary-color);
     color: var(--text-color);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
+    font-weight: bold;
     border: none;
     border-radius: 15px;
     transition: background-color 0.3s ease;
@@ -154,6 +155,7 @@ body{
 .btn-next:hover{
     background-color: var(--color-btn-hover-primary);
 }
+
 
 /*RESPUESTA CORRECTA E INCORRECTA*/
 
