@@ -75,3 +75,20 @@ const questions = [
 let numeroPregunta = 0
 let aciertosPregunta = 0
 let respuestaUsuario = false
+
+
+//FUNCION PREGUNTAS
+
+function mostrarPregunta (){
+    const preguntaActual = questions[numeroPregunta]
+    questionTitle.textContent = preguntaActual.pregunta
+
+    const botonesRespuesta = document.querySelectorAll(".btn-question")
+    botonesRespuesta.forEach((boton, indice) => {
+        boton.textContent = preguntaActual.opciones[indice]
+    })
+
+    numberQuestions.textContent = (numeroPregunta + 1) + " de" + questions.length
+}
+
+//FUNCION ESCONDER PANTALLA BIENVENIDA
