@@ -29,7 +29,7 @@ const questions = [
     {
         pregunta: "¿Cuál es el río más largo del mundo?",
         opciones: ["Nilo", "Misisipi", "Amazonas", "Yangtsé"],
-        correcta: "Amazonas"
+        correcta: "Nilo"
     },
     {
         pregunta: "¿Cuáles son los colores que constituyen la bandera de México?",
@@ -68,3 +68,10 @@ const questions = [
     }
 ]
 
+//CÓDIGO TRIVIAL
+
+//VARIABLES
+
+let numeroPregunta = 0
+let aciertosPregunta = 0
+let respuestaUsuario = false
