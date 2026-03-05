@@ -87,7 +87,7 @@ function mostrarPregunta (){
     const botonesRespuesta = document.querySelectorAll(".btn-question")
     botonesRespuesta.forEach((boton, indice) => {
         boton.textContent = preguntaActual.opciones[indice]
-
+        boton.dataset.respuesta = preguntaActual.opciones[indice]
         boton.addEventListener("click", comprobarRespuesta)
     })
 
@@ -108,6 +108,9 @@ btnQuiz.addEventListener("click", iniciarQuiz)
 //FUNCION RESPUESTA CORRECTA O INCORRECTA
 
 function comprobarRespuesta(e){
+    if(respuestaUsuario) return
+    respuestaUsuario = true
+
     const seleccionUsuario = e.target.dataset.respuesta
 
     if(seleccionUsuario === preguntaActual.correcta){
@@ -115,8 +118,24 @@ function comprobarRespuesta(e){
         statusAnswer.textContent = "¡Correcto!"
         statusAnswer.classList.add("correct")
     }else{
-        aciertosPregunta--
         statusAnswer.textContent = "¡Incorrecto!"
         statusAnswer.classList.add("incorrect")
+    }
+}
+
+//FUNCION SIGUIENTE PREGUNTA
+
+function siguientePregunta(){
+    statusAnswer.textContent = ""
+    statusAnswer.classList.remove("correct", "incorrect")
+
+    numeroPregunta++
+    respuestaUsuario = false
+
+    if(numeroPregunta >= questions.length){
+        questionScreen.style.display = "none"
+        resultScreen.style.display = "block"
+    }else{
+        mostrarPregunta()
     }
 }

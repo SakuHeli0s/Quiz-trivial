@@ -136,7 +136,6 @@ body{
 #status-answer{
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--text-color);
 }
 
 .btn-next{
@@ -160,11 +159,17 @@ body{
 /*RESPUESTA CORRECTA E INCORRECTA*/
 
 .correct{
-    color: var(--correct-color);
+    color: white;
+    background-color: var(--correct-color);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
 }
 
 .incorrect{
-    color: var(--wrong-color);
+    color: white;
+    background-color: var(--wrong-color);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
 }
 
 
