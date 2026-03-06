@@ -12,6 +12,7 @@ const questionTitle = document.querySelector(".question-title")
 const resultScreen = document.getElementById("result-screen")
 const totalResult = document.getElementById("total-result")
 const btnPlayAgain = document.getElementById("btn-play-again")
+const btnHome = document.getElementById("btn-home")
 
 
 //ARRAY DE PREGUNTAS
@@ -184,3 +185,19 @@ function reiniciarQuiz(){
 }
 
 btnPlayAgain.addEventListener("click", reiniciarQuiz)
+
+
+//FUNCION REGRESAR AL INICIO DEL QUIZ
+
+function irAlInicio(){
+        numeroPregunta = 0
+    aciertosPregunta = 0
+    respuestaUsuario = false
+    respuestasUsuario = []
+    preguntaActual = null
+
+    resultScreen.style.display = "none"
+    welcomeContainer.style.display = "block"
+}
+
+btnHome.addEventListener("click", irAlInicio)

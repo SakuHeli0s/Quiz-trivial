@@ -193,9 +193,11 @@ body{
 
 #total-result{
     width: 100%;
+    text-align: center;
 }
 
-.btn-play-again{
+.btn-play-again, .btn-home{
+    margin: 1rem;
     padding: 1.8rem;
     background: var(--primary-color);
     color: var(--text-color);
@@ -207,6 +209,11 @@ body{
     cursor: pointer;
 }
 
+
 .btn-play-again:hover{
+    background-color: var(--color-btn-hover-primary);
+}
+
+.btn-home:hover{
     background-color: var(--color-btn-hover-primary);
 }
