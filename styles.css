@@ -196,6 +196,12 @@ body{
     text-align: center;
 }
 
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .btn-play-again, .btn-home{
     margin: 1rem;
     padding: 1.8rem;
@@ -210,10 +216,6 @@ body{
 }
 
 
-.btn-play-again:hover{
-    background-color: var(--color-btn-hover-primary);
-}
-
-.btn-home:hover{
+.btn-play-again:hover, .btn-home:hover{
     background-color: var(--color-btn-hover-primary);
 }

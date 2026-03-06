@@ -190,7 +190,7 @@ btnPlayAgain.addEventListener("click", reiniciarQuiz)
 //FUNCION REGRESAR AL INICIO DEL QUIZ
 
 function irAlInicio(){
-        numeroPregunta = 0
+    numeroPregunta = 0
     aciertosPregunta = 0
     respuestaUsuario = false
     respuestasUsuario = []
