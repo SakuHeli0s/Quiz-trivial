@@ -32,7 +32,7 @@ const questions = [
         correcta: "Nilo"
     },
     {
-        pregunta: "¿Cuáles son los colores que constituyen la bandera de México?",
+        pregunta: "¿Qué colores tiene la bandera de México?",
         opciones: ["Blanco, azul y rojo", "Verde, blanco y rojo", "Rojo, amarillo y verde", "Blanco, rojo y naranja"],
         correcta: "Verde, blanco y rojo"
     },
@@ -75,6 +75,7 @@ const questions = [
 let numeroPregunta = 0
 let aciertosPregunta = 0
 let respuestaUsuario = false
+let respuestasUsuario = []
 let preguntaActual
 
 
@@ -121,6 +122,8 @@ function comprobarRespuesta(e){
         statusAnswer.textContent = "¡Incorrecto!"
         statusAnswer.classList.add("incorrect")
     }
+
+    respuestasUsuario.push(seleccionUsuario)
 }
 
 //FUNCION SIGUIENTE PREGUNTA
@@ -139,3 +142,5 @@ function siguientePregunta(){
         mostrarPregunta()
     }
 }
+
+btnNext.addEventListener("click", siguientePregunta)
