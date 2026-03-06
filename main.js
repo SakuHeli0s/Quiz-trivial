@@ -1,4 +1,4 @@
-//CARGAR ELEMENTOS HTML
+//CARGAR ELEMENTOS HTML AL JS
 
 const welcomeContainer = document.getElementById("welcome-screen")
 const btnQuiz = document.getElementById("btn-quiz")
@@ -13,7 +13,8 @@ const resultScreen = document.getElementById("result-screen")
 const totalResult = document.getElementById("total-result")
 const btnPlayAgain = document.getElementById("btn-play-again")
 
-//ARRAY PREGUNTAS
+
+//ARRAY DE PREGUNTAS
 
 const questions = [
     {
@@ -68,6 +69,7 @@ const questions = [
     }
 ]
 
+
 //CÓDIGO TRIVIAL
 
 //VARIABLES
@@ -77,6 +79,7 @@ let aciertosPregunta = 0
 let respuestaUsuario = false
 let respuestasUsuario = []
 let preguntaActual
+
 
 
 //FUNCION PREGUNTAS
@@ -95,6 +98,8 @@ function mostrarPregunta (){
     numberQuestions.textContent = (numeroPregunta + 1) + " de " + questions.length
 }
 
+
+
 //FUNCION ESCONDER PANTALLA BIENVENIDA
 
 function iniciarQuiz (){
@@ -104,6 +109,7 @@ function iniciarQuiz (){
 }
 
 btnQuiz.addEventListener("click", iniciarQuiz)
+
 
 
 //FUNCION RESPUESTA CORRECTA O INCORRECTA
@@ -126,6 +132,8 @@ function comprobarRespuesta(e){
     respuestasUsuario.push(seleccionUsuario)
 }
 
+
+
 //FUNCION SIGUIENTE PREGUNTA
 
 function siguientePregunta(){
@@ -144,3 +152,11 @@ function siguientePregunta(){
 }
 
 btnNext.addEventListener("click", siguientePregunta)
+
+
+
+//FUNCION MOSTRAR RESULTADOS
+
+function mostrarResultados(){
+    totalResult.textContent = `Has acertado ${aciertosPregunta} de ${questions.length} preguntas.`
+}
