@@ -146,6 +146,7 @@ function siguientePregunta(){
     if(numeroPregunta >= questions.length){
         questionScreen.style.display = "none"
         resultScreen.style.display = "block"
+        mostrarResultados()
     }else{
         mostrarPregunta()
     }
@@ -158,5 +159,28 @@ btnNext.addEventListener("click", siguientePregunta)
 //FUNCION MOSTRAR RESULTADOS
 
 function mostrarResultados(){
-    totalResult.textContent = `Has acertado ${aciertosPregunta} de ${questions.length} preguntas.`
+    totalResult.innerHTML = `<p>Has acertado ${aciertosPregunta} de ${questions.length} preguntas.</p>`
+
+    questions.forEach((pregunta, indice) => {
+        const icono = respuestasUsuario[indice] === pregunta.correcta ? "✅" : "❌"
+        totalResult.innerHTML += `<p>${icono} ${pregunta.pregunta}</p>`
+    })
 }
+
+
+//RESETEAR TRIVIAL
+
+function reiniciarQuiz(){
+    numeroPregunta = 0
+    aciertosPregunta = 0
+    respuestaUsuario = false
+    respuestasUsuario = []
+    preguntaActual = null
+
+    resultScreen.style.display = "none"
+    questionScreen.style.display = "block"
+
+    mostrarPregunta()
+}
+
+btnPlayAgain.addEventListener("click", reiniciarQuiz)
