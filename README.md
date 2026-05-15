@@ -1,4 +1,4 @@
-# ❓Quizz Trivial
+# ❓Quiz Trivial
 
 A simple trivia game project with questions.
 
@@ -27,10 +27,9 @@ A simple trivia game project with questions.
 
 ## 🔗 Live Demo
 
-👉 [Quizz Trivial](https://mariabayan-dev.github.io/Quiz-trivial/)
+👉 [Quiz Trivial](https://mariabayan-dev.github.io/Quiz-trivial/)
 
 ## 📸 Preview
 
-<img width="1887" height="912" alt="quizz-trivial-preview" src="https://github.com/user-attachments/assets/e847766f-c6f4-40ad-b94d-3e11ea191612" />
-
+<img width="1887" height="912" alt="quiz-trivial-preview" src="https://github.com/user-attachments/assets/5a25699e-c25d-42d6-95cc-fb1c6d8e724f" />
 
